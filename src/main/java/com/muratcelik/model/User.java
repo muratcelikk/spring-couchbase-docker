@@ -1,10 +1,17 @@
 package com.muratcelik.model;
 
+import com.couchbase.client.deps.com.fasterxml.jackson.annotation.JsonIgnore;
+import com.couchbase.client.java.repository.annotation.Field;
 import com.couchbase.client.java.repository.annotation.Id;
+import lombok.ToString;
 import org.springframework.data.couchbase.core.mapping.Document;
 
+import javax.validation.constraints.NotEmpty;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * @author Murat Çelik Pegamis
+ * @author Murat Çelik
  */
 @Document
 public class User {

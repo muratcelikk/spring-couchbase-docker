@@ -1,0 +1,17 @@
+version: '3'
+services:
+    build:
+      context: .
+    ports:
+      - "8091-8094:8091-8094"
+      - "11210:11210"
+    environment:
+      NODE_TYPE: DEFAULT
+      CLUSTER_USERNAME: Administrator
+      CLUSTER_PASSWORD: password
+      SERVICES: data,index,query,fts
+      CLUSTER_RAMSIZE: 500
+      BUCKET: db
+      BUCKET_RAMSIZE: 300
+      ENABLE_FLUSH: 1
+

@@ -25,7 +25,6 @@ public class CmdRunner implements CommandLineRunner {
         User u2 = createUser("user::0002", "Yelda", "Yol", "yelda.yol@pegam.com");
         userRepository.save(u2);
 
-
         User u3 = createUser("user::0003", "Zerda", "Karadumanlıoğlu", "zerrin.karadumanlıoglu@pegam.com");
         userRepository.save(u3);
     }
