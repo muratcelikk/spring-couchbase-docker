@@ -24,12 +24,12 @@ public class CouchbaseConfig extends AbstractCouchbaseConfiguration {
     }
 
     @Override
-    protected String getUsername(){
+    protected String getUsername() {
         return "Administrator";
     }
 
     @Override
     protected String getBucketPassword() {
-        return "pegamis";
+        return "password";
     }
 }
